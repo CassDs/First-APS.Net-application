@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PrimeiraAplicacaoASP.NET.Models;
 
 namespace PrimeiraAplicacaoASP.NET
 {
@@ -24,6 +25,7 @@ namespace PrimeiraAplicacaoASP.NET
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<Context>(); //Setando o serviço de criação do Banco de Dados
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
