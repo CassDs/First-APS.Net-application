@@ -2,6 +2,7 @@
 
 namespace PrimeiraAplicacaoASP.NET.Migrations
 {
+    //Class Responavel pela criação das tabelas
     public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)

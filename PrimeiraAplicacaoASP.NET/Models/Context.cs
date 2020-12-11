@@ -14,7 +14,7 @@ namespace PrimeiraAplicacaoASP.NET.Models
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) //Configurando o banco de Dados
         {
             //Utilizando o SLQ Server, e fazendo o set da criação do banco
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqlocaldb;Database=DBTest;Integrated Security=True");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=DBTest;Integrated Security=True");
         }
     }
 }
