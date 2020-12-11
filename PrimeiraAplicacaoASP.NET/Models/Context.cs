@@ -10,6 +10,8 @@ namespace PrimeiraAplicacaoASP.NET.Models
     {
         //Passando a class Categoria para criação de tabelas
         public DbSet<Categoria> Categorias { get; set; }
+        //Passando a class Produtos para criação de tabelas
+        public DbSet<Produto> Produtos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) //Configurando o banco de Dados
         {
