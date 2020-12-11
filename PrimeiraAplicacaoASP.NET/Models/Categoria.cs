@@ -10,5 +10,7 @@ namespace PrimeiraAplicacaoASP.NET.Models
         public int Id { get; set; } //Chave primaria das tabelas do banco de dados
 
         public string Descricao { get; set; } //Descrição dos itens
+
+        public List<Produto> Produtos { get; set; }
     }
 }
